@@ -18,7 +18,14 @@ function addNewElementAsLi(){
   li.innerHTML = employee
   return ul.appendChild(li)
 }
-  //input.addEventListener('click', function (event) {
-    //console.log(e.which)
-  //})
-//}
+function addNewLiOnClick() {
+  document.querySelector('input[type="submit"]').addEventListener('click', function (event) {
+  addNewElementAsLi()
+  document.querySelector('input').value = ''
+  })
+}
+function clearEmployeeListOnLinkClick(){
+ document.querySelector('a').addEventListener('click', function (event) {
+   document.querySelector('ul').innerHTML  =""
+})
+}
