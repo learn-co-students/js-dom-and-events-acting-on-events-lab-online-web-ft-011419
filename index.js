@@ -28,4 +28,4 @@ function clearEmployeeListOnLinkClick(){
  document.querySelector('a').addEventListener('click', function (event) {
    document.querySelector('ul').innerHTML  =""
 })
-}
+}// lab 
